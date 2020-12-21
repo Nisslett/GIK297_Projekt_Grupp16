@@ -1,0 +1,156 @@
+@charset "UTF-8";
+:root {
+  --remSize: 8px;
+  /* Typography */
+  --fontStd: 1.6rem;
+  --fontMono: Consolas, monospace;
+  --fontSans: Helvetica, sans-serif;
+  --fontSerif: Times, 'Times New Roman', serif;
+  /* Box */
+  --box1: .5rem;
+  --box2: 1rem;
+  --box3: 1.5rem;
+  --box4: 2rem;
+  --box5: 2.5rem;
+  --box6: 3rem;
+  --box7: 3.5rem;
+  --box8: 4rem;
+  --box9: 4.5rem;
+  --box10: 5rem;
+  --box11: 5.5rem;
+  --box12: 6rem;
+  /* Colors */
+  --black: #272932;
+  --white: #EBF6FF;
+  --clr1VeryDark: #29343d;
+  --clr1VeryDarkSat: #1f3547;
+  --clr1VeryDarkDesat: #2e3438;
+  --clr1Dark: #476985;
+  --clr1DarkSat: #336b99;
+  --clr1DarkDesat: #52687a;
+  --clr1: #709dc2;
+  --clr1Sat: #5c9fd6;
+  --clr1Desat: #7a9cb8;
+  --clr1Light: #9fc2df;
+  --clr1LightSat: #93c4ec;
+  --clr1LightDesat: #a6c2d9;
+  --clr1VeryLight: #d6e7f5;
+  --clr1VeryLightSat: #d1e8fa;
+  --clr1VeryLightDesat: #d9e7f2;
+  --clr2VeryDark: #292b3d;
+  --clr2VeryDarkSat: #1f2347;
+  --clr2VeryDarkDesat: #2e2f38;
+  --clr2Dark: #474f85;
+  --clr2DarkSat: #333f99;
+  --clr2DarkDesat: #52567a;
+  --clr2: #707ac2;
+  --clr2Sat: #5c6ad6;
+  --clr2Desat: #7a82b8;
+  --clr2Light: #9fa7df;
+  --clr2LightSat: #939dec;
+  --clr2LightDesat: #a6acd9;
+  --clr2VeryLight: #d6daf5;
+  --clr2VeryLightSat: #d1d6fa;
+  --clr2VeryLightDesat: #d9dcf2;
+  --clr3VeryDark: #3d2932;
+  --clr3VeryDarkSat: #471f31;
+  --clr3VeryDarkDesat: #382e32;
+  --clr3Dark: #854763;
+  --clr3DarkSat: #993361;
+  --clr3DarkDesat: #7a5264;
+  --clr3: #c27095;
+  --clr3Sat: #d65c93;
+  --clr3Desat: #b87a96;
+  --clr3Light: #df9fbc;
+  --clr3LightSat: #ec93bb;
+  --clr3LightDesat: #d9a6bd;
+  --clr3VeryLight: #f5d6e4;
+  --clr3VeryLightSat: #fad1e3;
+  --clr3VeryLightDesat: #f2d9e4;
+  --clr4VeryDark: #293d34;
+  --clr4VeryDarkSat: #1f4735;
+  --clr4VeryDarkDesat: #2e3834;
+  --clr4Dark: #478569;
+  --clr4DarkSat: #33996b;
+  --clr4DarkDesat: #527a68;
+  --clr4: #70c29d;
+  --clr4Sat: #5cd69f;
+  --clr4Desat: #7ab89c;
+  --clr4Light: #9fdfc2;
+  --clr4LightSat: #93ecc4;
+  --clr4LightDesat: #a6d9c2;
+  --clr4VeryLight: #d6f5e7;
+  --clr4VeryLightSat: #d1fae8;
+  --clr4VeryLightDesat: #d9f2e7;
+  --clr5VeryDark: #3d3829;
+  --clr5VeryDarkSat: #473e1f;
+  --clr5VeryDarkDesat: #38362e;
+  --clr5Dark: #857647;
+  --clr5DarkSat: #998133;
+  --clr5DarkDesat: #7a7152;
+  --clr5: #c2af70;
+  --clr5Sat: #d6ba5c;
+  --clr5Desat: #b8a97a;
+  --clr5Light: #dfd09f;
+  --clr5LightSat: #ecd793;
+  --clr5LightDesat: #d9cda6;
+  --clr5VeryLight: #f5eed6;
+  --clr5VeryLightSat: #faf0d1;
+  --clr5VeryLightDesat: #f2ecd9;
+  /* Grid */
+  --gridMargin: 15px;
+  --pOuter: 15px;
+}
+
+/* Tablets */
+
+@media only screen and (min-width: 480px) {
+   :root {
+    /* Grid */
+    --gridMargin: 6px;
+  }
+}
+
+/* Laptops */
+
+@media only screen and (min-width: 768px) {
+   :root {
+    /* rem interpretation 9px */
+    --remSize: 9px;
+    /* Padding to push large sections towards the center of the screen */
+    --pOuter: 5vw;
+    /* Grid */
+    --gridMargin: 7px;
+  }
+}
+
+/* Desktops, low resolution */
+
+@media only screen and (min-width: 992px) {
+   :root {
+    /* Padding to push large sections towards the center of the screen */
+    --pOuter: 10vw;
+    /* Grid */
+    --gridMargin: 8px;
+  }
+}
+
+/* Desktops, medium resolution */
+
+@media only screen and (min-width: 1200px) {
+   :root {
+    /* rem interpretation 10px */
+    --remSize: 10px;
+    /* Grid */
+    --gridMargin: 9px;
+  }
+}
+
+/* Desktops, high resolution */
+
+@media only screen and (min-width: 1600px) {
+   :root {
+    /* Grid */
+    --gridMargin: 10px;
+  }
+}

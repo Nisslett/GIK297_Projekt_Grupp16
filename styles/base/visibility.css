@@ -1,0 +1,79 @@
+.d-none {
+  display: none;
+}
+.d-block {
+  display: block;
+}
+.d-flex {
+  display: flex;
+}
+
+/* Tablets */
+
+@media only screen and (min-width: 480px) {
+  .d-none-xs {
+    display: none;
+  }
+  .d-block-xs {
+    display: block;
+  }
+  .d-flex-xs {
+    display: flex;
+  }
+}
+
+/* Laptops */
+
+@media only screen and (min-width: 768px) {
+  .d-none-sm {
+    display: none;
+  }
+  .d-block-sm {
+    display: block;
+  }
+  .d-flex-sm {
+    display: flex;
+  }
+}
+
+/* Desktops, low resolution */
+
+@media only screen and (min-width: 992px) {
+  .d-none-md {
+    display: none;
+  }
+  .d-block-md {
+    display: block;
+  }
+  .d-flex-md {
+    display: flex;
+  }
+}
+
+/* Desktops, medium resolution */
+
+@media only screen and (min-width: 1200px) {
+  .d-none-lg {
+    display: none;
+  }
+  .d-block-lg {
+    display: block;
+  }
+  .d-flex-lg {
+    display: flex;
+  }
+}
+
+/* Desktops, high resolution */
+
+@media only screen and (min-width: 1600px) {
+  .d-none-xl {
+    display: none;
+  }
+  .d-block-xl {
+    display: block;
+  }
+  .d-flex-xl {
+    display: flex;
+  }
+}

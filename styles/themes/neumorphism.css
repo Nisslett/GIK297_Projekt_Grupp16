@@ -1,0 +1,24 @@
+/* Neumorphism */
+.neu {
+    min-height: 15rem;
+    min-width: 15rem;
+    border: .1rem solid rgba(240, 235, 250, .75);
+    border-radius: 50%;
+    background: linear-gradient(145deg, rgb(220, 215, 230), rgb(240, 240, 250));
+    box-shadow: .8rem .8rem 2rem rgb(205, 200, 215),
+                -.8rem -.8rem 2rem rgb(250, 250, 255);
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--darkPurple);
+    text-shadow: .05rem .05rem 0 rgba(250,250,250,.3),
+                -.05rem -.05rem 0 rgba(80, 70, 85, .5);
+}
+.neu:hover {
+    background: linear-gradient(145deg, rgb(240, 240, 250), rgb(220, 215, 230));
+    font-size: 2.03rem;
+}
+.neu:active {
+    font-size: 1.96rem;
+    box-shadow: inset .8rem .8rem 2rem rgb(205, 200, 215),
+                inset -.8rem -.8rem 2rem rgb(250, 250, 255);
+}

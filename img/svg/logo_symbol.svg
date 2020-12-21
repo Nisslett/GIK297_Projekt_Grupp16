@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="SVGRoot" width="48px" height="48px" version="1.1" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="matrix(1.1915 0 0 1.1774 .16968 0)" stroke-width=".34843">
+  <path d="m20 0c9.9652 0 19.303 7.4564 19.303 20.383 0 12.927-9.338 20.383-19.303 20.383-9.9652 0-19.303-7.4564-19.303-20.383 0-12.927 9.338-20.383 19.303-20.383zm0 30c4.0418 0 5.6098-3.7282 5.6098-9.6516 0-5.9233-1.5679-9.6516-5.6098-9.6516-4.0418 0-5.6098 3.7282-5.6098 9.6516 0 5.9233 1.5679 9.6516 5.6098 9.6516z" fill="#7a9acc"/>
+  <circle cx="19.861" cy="20.314" r="4.4599" fill="#f76eac"/>
+ </g>
+</svg>

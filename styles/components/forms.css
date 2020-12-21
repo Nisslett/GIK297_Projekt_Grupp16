@@ -1,0 +1,110 @@
+.form,
+.form__row,
+.form__section,
+.form__header,
+.form__group,
+.form__field {
+  display: flex;
+}
+.form {
+  padding: var(--box10) var(--box8);
+  border-radius: var(--box4);
+  background-color: var(--clr1VeryLightSat);
+}
+.form,
+.form__section {
+  flex-direction: column;
+}
+.form__single {
+  max-width: 640px;
+}
+.form__row {
+  margin-top: var(--box8);
+  justify-content: space-between;
+}
+.form__col {
+  width: 45%;
+}
+.form__header {
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: var(--box10);
+  border-bottom: 1px solid var(--clr1Desat);
+}
+.form__headline {
+  margin: 0 0 var(--box5);
+}
+.form__info {
+  align-self: flex-end;
+  font-style: italic;
+}
+.form__info abbr,
+.form__required {
+  color: var(--clr3Sat);
+}
+.form__fieldset {
+  margin-bottom: var(--box4);
+}
+.form__field {
+  flex-direction: column;
+  margin-top: var(--box8);
+}
+.form__label,
+.form__input,
+.form__select,
+.form__btn {
+  font-size: 2rem;
+}
+.form__label {
+  font-family: var(--fontSans);
+  color: var(--clr1Dark);
+  margin-bottom: var(--box2);
+}
+.form__input,
+.form__select,
+.form__btn {
+  padding: var(--box4) var(--box2);
+  border-radius: var(--box2);
+}
+.form__input {
+  box-shadow: inset .2rem .2rem .5rem var(--clr1Light);
+}
+.form__input:focus {
+  box-shadow: inset .2rem .2rem .5rem var(--clr2Light);
+}
+.form__select {
+  border: none;
+}
+.form__select:focus {
+  border-radius: 0;
+}
+.form__btn {
+  text-transform: uppercase;
+  background-color: var(--black);
+  color: var(--white);
+  text-align: center;
+}
+.form__btn--success {
+  background-color: var(--clr4);
+}
+.form__btn--success:hover {
+  background-color: var(--clr4Sat);
+}
+.form__btn--success:active {
+  background-color: var(--clr4Dark);
+  color: white;
+}
+.form__btn--danger {
+  background-color: var(--clr3);
+}
+.form__btn--danger:hover {
+  background-color: var(--clr3Sat);
+}
+.form__btn--danger:active {
+  background-color: var(--clr3Dark);
+  color: white;
+}
+.form__direct {
+  margin-top: var(--box6);
+  text-align: right;
+}
