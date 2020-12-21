@@ -1,4 +1,4 @@
-                                                    /* 
+/* 
 Brytpunkter:
 MOBILE = 300-479px (egentligen allt under 480px, men det är kravsatt att det inte ska gå att scrolla i sidled för ens under 300px)
 TABLETS = min-width 480px (480-767px)
@@ -9,123 +9,123 @@ DESKTOP HIGH-RES = min width 1600px
 Krav: "Webbplatsen ska se bra ut även i alla storlekar mellan ovan nämnda brytpunkter"
 --MOBILE FIRST!--
 */
-                                                    
-                                                    .profile__background {
-                                                        background-image: url(../../img/nature-snow-winter-view-animal-cute-1361003-pxhere.com.jpg);
-                                                        background-position: 45% 35%;
-                                                        width: 100%;
-                                                        min-height: 200px;
-                                                        max-height: 400px;
-                                                        position: relative;
-                                                        border-radius: 5px;
-                                                        margin-bottom: 5px;
-                                                    }
-                                                    
-                                                    .profile__img {
-                                                        border-radius: 15px 50px;
-                                                        position: absolute;
-                                                        left: 20px;
-                                                        bottom: 10px;
-                                                        border: 2px solid whitesmoke;
-                                                    }
-                                                    
-                                                    h2,
-                                                    h3 {
-                                                        text-transform: none;
-                                                        text-align: center;
-                                                    }
-                                                    
-                                                    h2 {
-                                                        margin: 0px;
-                                                    }
-                                                    
-                                                    h3 {
-                                                        margin-bottom: 1rem;
-                                                    }
-                                                    
-                                                    .divider {
-                                                        color: var(--clr1LightDesat);
-                                                        width: 100%
-                                                    }
-                                                    
-                                                    .personal__info h3 {
-                                                        text-align: center;
-                                                    }
-                                                    
-                                                    .presentation>p {
-                                                        padding: 0 0.75em 0 0.75em;
-                                                    }
-                                                    
-                                                    .personal__info ul {
-                                                        list-style-type: none;
-                                                        padding-left: 0px;
-                                                        margin: 5px 0px 0px 0px;
-                                                        text-align: center;
-                                                    }
-                                                    
-                                                    .knowledge__prog,
-                                                    .knowledge__prog--secondary {
-                                                        justify-content: center;
-                                                        align-items: center;
-                                                        display: flex;
-                                                        flex-direction: column;
-                                                        margin: 0.5em 0em 1em 0em;
-                                                    }
-                                                    
-                                                    progress[value] {
-                                                        -webkit-appearance: none;
-                                                        -moz-appearance: none;
-                                                        appearance: none;
-                                                    }
-                                                    
-                                                    progress[value] {
-                                                        width: 200px;
-                                                        height: 10px;
-                                                    }
-                                                    /* Bakgrundsfärg progress, kolla på sen.*/
-                                                    
-                                                    .knowledge__prog>progress {
-                                                        background-color: var(--clr1LightDesat);
-                                                    }
-                                                    
-                                                    .knowledge__prog--secondary>progress {
-                                                        background-color: var(--clr1LightDesat);
-                                                    }
-                                                    
-                                                    progress::-moz-progress-bar {
-                                                        background-color: var(--clr1DarkDesat);
-                                                    }
-                                                    /*Chrome shit and Safari crap*/
-                                                    
-                                                    progress::-webkit-progress-bar {
-                                                        background-color: var(--clr1LightDesat);
-                                                    }
-                                                    
-                                                    progress::-webkit-progress-value {
-                                                        background-color: var(--clr1DarkDesat);
-                                                    }
-                                                    
-                                                    label {
-                                                        margin-top: 0.5em;
-                                                    }
-                                                    /* .knowledge__prog,
+
+.profile__background {
+    background-image: url(../../img/nature-snow-winter-view-animal-cute-1361003-pxhere.com.jpg);
+    background-position: 45% 35%;
+    width: 100%;
+    min-height: 200px;
+    max-height: 400px;
+    position: relative;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.profile__img {
+    border-radius: 15px 50px;
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+    border: 2px solid whitesmoke;
+}
+
+h2,
+h3 {
+    text-transform: none;
+    text-align: center;
+}
+
+h2 {
+    margin: 0px;
+}
+
+h3 {
+    margin-bottom: 1rem;
+}
+
+.divider {
+    color: var(--clr1LightDesat);
+    width: 100%
+}
+
+.personal__info h3 {
+    text-align: center;
+}
+
+.presentation>p {
+    padding: 0 0.75em 0 0.75em;
+}
+
+.personal__info ul {
+    list-style-type: none;
+    padding-left: 0px;
+    margin: 5px 0px 0px 0px;
+    text-align: center;
+}
+
+.knowledge__prog,
+.knowledge__prog--secondary {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0.5em 0em 1em 0em;
+}
+
+progress[value] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+progress[value] {
+    width: 200px;
+    height: 10px;
+}
+/* Bakgrundsfärg progress, kolla på sen.*/
+
+.knowledge__prog>progress {
+    background-color: var(--clr1LightDesat);
+}
+
+.knowledge__prog--secondary>progress {
+    background-color: var(--clr1LightDesat);
+}
+
+progress::-moz-progress-bar {
+    background-color: var(--clr1DarkDesat);
+}
+/*Chrome shit and Safari crap*/
+
+progress::-webkit-progress-bar {
+    background-color: var(--clr1LightDesat);
+}
+
+progress::-webkit-progress-value {
+    background-color: var(--clr1DarkDesat);
+}
+
+label {
+    margin-top: 0.5em;
+}
+/* .knowledge__prog,
 .knowledge__prog--secondary {
 appearance: none;
 } */
-                                                    
-                                                    .knowledge>p {
-                                                        font-weight: 700;
-                                                        text-align: center;
-                                                    }
-                                                    
-                                                    .personal__info,
-                                                    .presentation,
-                                                    .knowledge,
-                                                    .responsibilities {
-                                                        margin-bottom: 5px;
-                                                        padding: 5px;
-                                                    }
-                                                    /*
+
+.knowledge>p {
+    font-weight: 700;
+    text-align: center;
+}
+
+.personal__info,
+.presentation,
+.knowledge,
+.responsibilities {
+    margin-bottom: 5px;
+    padding: 5px;
+}
+/*
 Table things 
 Do not touch the Holy table aka sexy table! Or feel the wrath of the almighty Table Gods.
 
@@ -134,110 +134,110 @@ First rule of Table Club
 2.We do not talk about tables!
 3.We do not talk about tables!
 */
-                                                    
-                                                    .responsibilities table,
-                                                    tr,
-                                                    td {
-                                                        display: block;
-                                                    }
-                                                    /*
-                                                    td,
-                                                    th {
-                                                        background-color: rgba(0, 0, 0, 0);
-                                                    }
-                                                    */
-                                                    
-                                                    tbody>tr:nth-child(odd) {
-                                                        background-color: var(--clr1LightDesat);
-                                                    }
-                                                    
-                                                    tbody>tr>td::before {
-                                                        font-weight: bold;
-                                                    }
-                                                    
-                                                    tbody>tr>td:nth-child(1)::before {
-                                                        content: "Kurskod: ";
-                                                    }
-                                                    
-                                                    tbody>tr>td:nth-child(2)::before {
-                                                        content: "Kursnamn: ";
-                                                    }
-                                                    
-                                                    tbody>tr>td:nth-child(3)::before {
-                                                        content: "Period: ";
-                                                    }
-                                                    
-                                                    tbody>tr>td:nth-child(4)::before {
-                                                        content: "Roll: ";
-                                                    }
-                                                    
-                                                    tbody>tr>td:nth-child(5)::before {
-                                                        content: "SY: ";
-                                                    }
-                                                    
-                                                    tbody>tr>td:nth-child(6)::before {
-                                                        content: "IT: ";
-                                                    }
-                                                    
-                                                    tbody>tr>td:nth-child(7)::before {
-                                                        content: "ID: ";
-                                                    }
-                                                    
-                                                    tbody>tr>td:nth-child(8)::before {
-                                                        content: "GD: ";
-                                                    }
-                                                    
-                                                    thead {
-                                                        display: none;
-                                                    }
-                                                    
-                                                    tbody>tr {
-                                                        margin: auto;
-                                                        border-left: 2px solid darkgrey;
-                                                        border-right: 2px solid darkgrey;
-                                                        padding: 4px;
-                                                    }
-                                                    
-                                                    tbody>tr:first-child {
-                                                        margin: auto;
-                                                        border-top: 2px solid darkgrey;
-                                                        border-radius: 10px 10px 0px 0px;
-                                                    }
-                                                    
-                                                    tbody>tr:last-child {
-                                                        margin: auto;
-                                                        border-bottom: 2px solid darkgrey;
-                                                        border-radius: 0px 0px 10px 10px;
-                                                    }
-                                                    
-                                                    table {
-                                                        margin: auto;
-                                                    }
-                                                    
-                                                    @media (min-width:400px) {
-                                                        .responsibilities table {
-                                                            display: table-caption;
-                                                        }
-                                                        .responsibilities td {
-                                                            display: table-cell;
-                                                            border-left: 0px;
-                                                            border-bottom: 0px;
-                                                            border-top: 0px;
-                                                            border-right: 2px;
-                                                            border-style: solid;
-                                                            border-color: black;
-                                                            margin: 0px;
-                                                            padding: 0px;
-                                                        }
-                                                        .responsibilities tr {
-                                                            display: table-row;
-                                                            margin: 0px;
-                                                            padding: 0px;
-                                                        }
-                                                        .table>tbody>tr>td::before {
-                                                            content: none;
-                                                        }
-                                                        thead {
-                                                            display: table-header-group;
-                                                        }
-                                                    }
+
+.responsibilities table,
+tr,
+td {
+    display: block;
+}
+/*
+td,
+th {
+    background-color: rgba(0, 0, 0, 0);
+}
+*/
+
+tbody>tr:nth-child(odd) {
+    background-color: var(--clr1LightDesat);
+}
+
+tbody>tr>td::before {
+    font-weight: bold;
+}
+
+tbody>tr>td:nth-child(1)::before {
+    content: "Kurskod: ";
+}
+
+tbody>tr>td:nth-child(2)::before {
+    content: "Kursnamn: ";
+}
+
+tbody>tr>td:nth-child(3)::before {
+    content: "Period: ";
+}
+
+tbody>tr>td:nth-child(4)::before {
+    content: "Roll: ";
+}
+
+tbody>tr>td:nth-child(5)::before {
+    content: "SY: ";
+}
+
+tbody>tr>td:nth-child(6)::before {
+    content: "IT: ";
+}
+
+tbody>tr>td:nth-child(7)::before {
+    content: "ID: ";
+}
+
+tbody>tr>td:nth-child(8)::before {
+    content: "GD: ";
+}
+
+thead {
+    display: none;
+}
+
+tbody>tr {
+    margin: auto;
+    border-left: 2px solid darkgrey;
+    border-right: 2px solid darkgrey;
+    padding: 4px;
+}
+
+tbody>tr:first-child {
+    margin: auto;
+    border-top: 2px solid darkgrey;
+    border-radius: 10px 10px 0px 0px;
+}
+
+tbody>tr:last-child {
+    margin: auto;
+    border-bottom: 2px solid darkgrey;
+    border-radius: 0px 0px 10px 10px;
+}
+
+table {
+    margin: auto;
+}
+
+@media (min-width:400px) {
+    .responsibilities table {
+        display: table-caption;
+    }
+    .responsibilities td {
+        display: table-cell;
+        border-left: 0px;
+        border-bottom: 0px;
+        border-top: 0px;
+        border-right: 2px;
+        border-style: solid;
+        border-color: black;
+        margin: 0px;
+        padding: 0px;
+    }
+    .responsibilities tr {
+        display: table-row;
+        margin: 0px;
+        padding: 0px;
+    }
+    .table>tbody>tr>td::before {
+        content: none;
+    }
+    thead {
+        display: table-header-group;
+    }
+}
