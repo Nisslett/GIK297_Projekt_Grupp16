@@ -1,0 +1,135 @@
+/*
+Table things 
+Do not touch the Holy table aka sexy table! Or feel the wrath of the almighty Table Gods.
+
+First rule of Table Club
+1.We do not talk about tables!
+2.We do not talk about tables!
+3.We do not talk about tables!
+*/
+
+.table__specifier {}
+
+.table__responsibilities {
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.table__responsibilities tr,
+.table__responsibilities td {
+    display: block;
+}
+
+.table__responsibilities tbody>tr:nth-child(odd) {
+    background-color: var(--clr1LightDesat);
+}
+
+.table__responsibilities tbody>tr>td::before {
+    font-weight: bold;
+}
+
+.table__responsibilities thead {
+    display: none;
+}
+
+.table__responsibilities tbody>tr>td:nth-child(1)::before {
+    content: "Kurskod: ";
+}
+
+.table__responsibilities tbody>tr>td:nth-child(2)::before {
+    content: "Kursnamn: ";
+}
+
+.table__responsibilities tbody>tr>td:nth-child(3)::before {
+    content: "Period: ";
+}
+
+.table__responsibilities tbody>tr>td:nth-child(4)::before {
+    content: "Roll: ";
+}
+
+.table__responsibilities tbody>tr>td:nth-child(5)::before {
+    content: "SY: ";
+}
+
+.table__responsibilities tbody>tr>td:nth-child(6)::before {
+    content: "IT: ";
+}
+
+.table__responsibilities tbody>tr>td:nth-child(7)::before {
+    content: "ID: ";
+}
+
+.table__responsibilities tbody>tr>td:nth-child(8)::before {
+    content: "GD: ";
+}
+
+.table__responsibilities tbody>tr {
+    margin: auto;
+    border-left: 2px solid darkgrey;
+    border-right: 2px solid darkgrey;
+    padding: 4px;
+}
+
+.table__responsibilities tbody>tr:first-child {
+    margin: auto;
+    border-top: 2px solid darkgrey;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.table__responsibilities tbody>tr:last-child {
+    margin: auto;
+    border-bottom: 2px solid darkgrey;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.table__responsibilities {
+    margin: auto;
+}
+
+.table__hiddencomp {
+    display: none;
+}
+
+@media (min-width: 400px) {
+    .table__responsibilities table {
+        display: table-caption;
+    }
+    .table__responsibilities td {
+        display: table-cell;
+        /*
+        border-left: 0px;
+        border-bottom: 0px;
+        border-top: 0px;
+        border-right: 2px;
+        border-style: solid;
+        border-color: black;
+        */
+        margin: 0px;
+        padding: 0px;
+    }
+    .table__responsibilities tr {
+        display: table-row;
+        margin: 0px;
+        padding: 0px;
+    }
+    /*.table__specifier .table__responsibilities tbody td::before {
+        content: none;
+    }*/
+    .table__responsibilities tbody>tr>td:nth-child(1)::before,
+    .table__responsibilities tbody>tr>td:nth-child(2)::before,
+    .table__responsibilities tbody>tr>td:nth-child(3)::before,
+    .table__responsibilities tbody>tr>td:nth-child(4)::before,
+    .table__responsibilities tbody>tr>td:nth-child(5)::before,
+    .table__responsibilities tbody>tr>td:nth-child(6)::before,
+    .table__responsibilities tbody>tr>td:nth-child(7)::before,
+    .table__responsibilities tbody>tr>td:nth-child(8)::before {
+        content: none;
+    }
+    .table__responsibilities thead {
+        display: table-header-group;
+    }
+    .table__hiddencomponent {
+        display: block;
+    }
+}

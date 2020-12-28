@@ -1,0 +1,15 @@
+.presentation>p {
+    padding: 0 0.75em 0 0.75em;
+}
+
+@media (min-width: 768px) {
+    .presentation {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 40%;
+    }
+    .presentation p {
+        padding-top: 1rem;
+        margin-left: 2rem;
+    }
+}
