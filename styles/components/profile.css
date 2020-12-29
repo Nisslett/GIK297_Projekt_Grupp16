@@ -1,15 +1,20 @@
-.profile__background {
-    background-image: url(../../img/nature-snow-winter-view-animal-cute-1361003-pxhere.com.jpg);
-    background-position: 45% 35%;
+.profile__images {
+    /*background-image: url("../../img/webp/backgroundXS.webp");
+    background-position: 50% 50%;*/
     width: 100%;
     min-height: 200px;
     max-height: 400px;
     position: relative;
     border-radius: 5px;
     margin-bottom: 5px;
+    overflow: hidden;
 }
 
-.profile__img {
+.profile__background>img {
+    /*width: 100%;*/
+}
+
+.profile__portrait {
     border-radius: 15px 50px;
     position: absolute;
     left: 20px;

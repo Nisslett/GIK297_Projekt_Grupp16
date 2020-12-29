@@ -8,11 +8,12 @@ First rule of Table Club
 3.We do not talk about tables!
 */
 
-.table__specifier {}
-
 .table__responsibilities {
-    margin-bottom: 5px;
-    padding: 5px;
+    /*viktig*/
+    border-collapse: collapse;
+    margin: 0 auto;
+    padding: 0px;
+    empty-cells: show;
 }
 
 .table__responsibilities tr,
@@ -83,28 +84,26 @@ First rule of Table Club
     border-radius: 0px 0px 10px 10px;
 }
 
-.table__responsibilities {
-    margin: auto;
+.table__responsibilities>.table__hiddentd {
+    display: block;
 }
 
-.table__hiddencomp {
-    display: none;
-}
 
-@media (min-width: 400px) {
+/* Tablets:*/
+
+@media only screen and (min-width: 480px) {
     .table__responsibilities table {
         display: table-caption;
+        /*empty-cells: hide;*/
     }
-    .table__responsibilities td {
+    .table__responsibilities td:not(.table__hiddentd) {
         display: table-cell;
-        /*
         border-left: 0px;
         border-bottom: 0px;
         border-top: 0px;
         border-right: 2px;
         border-style: solid;
         border-color: black;
-        */
         margin: 0px;
         padding: 0px;
     }
@@ -114,8 +113,8 @@ First rule of Table Club
         padding: 0px;
     }
     /*.table__specifier .table__responsibilities tbody td::before {
-        content: none;
-    }*/
+            content: none;
+        }*/
     .table__responsibilities tbody>tr>td:nth-child(1)::before,
     .table__responsibilities tbody>tr>td:nth-child(2)::before,
     .table__responsibilities tbody>tr>td:nth-child(3)::before,
@@ -129,7 +128,55 @@ First rule of Table Club
     .table__responsibilities thead {
         display: table-header-group;
     }
-    .table__hiddencomponent {
-        display: block;
-    }
+    .table__responsibilities>.table__hiddentd {}
 }
+
+
+/*o Laptops:*/
+
+@media only screen and (min-width: 768px) {}
+
+
+/*o Desktops, low resolution:*/
+
+@media only screen and (min-width: 992px) {}
+
+
+/*o Desktops, medium resolution:*/
+
+@media only screen and (min-width: 1200px) {}
+
+
+/*o Desktops, high resolution:*/
+
+@media only screen and (min-width: 1600px) {}
+
+
+/*
+table {
+  border: 1px solid #000000;
+  border-collapse: collapse;
+  margin: 0 auto;
+  padding: 0px;
+  table-layout: fixed;
+  min-width: 100%;
+}
+table th {
+  text-align: center;
+  padding: 8px;
+  border: 1px solid #000000;
+  background: #1b90bb;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+}
+table td {
+  padding: 8px;
+  border: 1px solid #000000;
+}
+table tr {
+  background-color: #dddddd;
+  color: #000000;
+  text-align: center;
+}
+*/
