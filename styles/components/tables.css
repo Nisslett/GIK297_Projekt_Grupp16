@@ -9,132 +9,135 @@ First rule of Table Club
 */
 
 .table__responsibilities {
-    /*viktig*/
     border-collapse: collapse;
     margin: 0 auto;
     padding: 0px;
-    empty-cells: show;
+    border:none;
 }
 
 .table__responsibilities tr,
-.table__responsibilities td {
+.table__responsibilities td,
+.table__mobilevisible {
     display: block;
 }
 
-.table__responsibilities tbody>tr:nth-child(odd) {
-    background-color: var(--clr1LightDesat);
+/* Mobile Boarders*/
+.table__responsibilities tr {
+    border-left: 2px solid darkgrey;
+    border-right: 2px solid darkgrey;
 }
 
-.table__responsibilities tbody>tr>td::before {
-    font-weight: bold;
+.table__responsibilities tr:first-child {
+    border-top: 2px solid darkgrey;
+    border-radius: 10px 10px 0 0 ;
+}
+.table__responsibilities tr:last-child {
+    border-bottom: 2px solid darkgrey;
+    border-radius: 0 0 10px 10px ;
 }
 
+/*Hide thead for mobile*/
 .table__responsibilities thead {
     display: none;
 }
 
-.table__responsibilities tbody>tr>td:nth-child(1)::before {
+.table__responsibilities tbody tr:nth-child(odd) {
+    background-color: var(--clr1LightDesat);
+}
+/*Mobile coloring*/
+
+.table__responsibilities tr td:nth-child(even){
+}
+.table__responsibilities tr td:nth-child(odd){
+}
+
+/* Mobile TD things*/
+
+.table__responsibilities tbody td{
+    padding: .5rem;
+}
+
+.table__responsibilities tbody td::before {
+    font-weight: bold;
+}
+
+.table__responsibilities tbody td:nth-child(1)::before {
     content: "Kurskod: ";
 }
 
-.table__responsibilities tbody>tr>td:nth-child(2)::before {
+.table__responsibilities tbody td:nth-child(2)::before {
     content: "Kursnamn: ";
 }
 
-.table__responsibilities tbody>tr>td:nth-child(3)::before {
+.table__responsibilities tbody td:nth-child(3)::before {
     content: "Period: ";
 }
 
-.table__responsibilities tbody>tr>td:nth-child(4)::before {
+.table__responsibilities tbody td:nth-child(4)::before {
     content: "Roll: ";
 }
 
-.table__responsibilities tbody>tr>td:nth-child(5)::before {
+.table__responsibilities tbody td:nth-child(5)::before {
     content: "SY: ";
 }
 
-.table__responsibilities tbody>tr>td:nth-child(6)::before {
+.table__responsibilities tbody td:nth-child(6)::before {
     content: "IT: ";
 }
 
-.table__responsibilities tbody>tr>td:nth-child(7)::before {
+.table__responsibilities tbody td:nth-child(7)::before {
     content: "ID: ";
 }
 
-.table__responsibilities tbody>tr>td:nth-child(8)::before {
+.table__responsibilities tbody td:nth-child(8)::before {
     content: "GD: ";
-}
-
-.table__responsibilities tbody>tr {
-    margin: auto;
-    border-left: 2px solid darkgrey;
-    border-right: 2px solid darkgrey;
-    padding: 4px;
-}
-
-.table__responsibilities tbody>tr:first-child {
-    margin: auto;
-    border-top: 2px solid darkgrey;
-    border-radius: 10px 10px 0px 0px;
-}
-
-.table__responsibilities tbody>tr:last-child {
-    margin: auto;
-    border-bottom: 2px solid darkgrey;
-    border-radius: 0px 0px 10px 10px;
-}
-
-.table__responsibilities>.table__hiddentd {
-    display: block;
 }
 
 
 /* Tablets:*/
 
 @media only screen and (min-width: 480px) {
-    .table__responsibilities table {
-        display: table-caption;
-        /*empty-cells: hide;*/
-    }
-    .table__responsibilities td:not(.table__hiddentd) {
+
+    /*Resetting display*/
+    .table__responsibilities td {
         display: table-cell;
-        border-left: 0px;
-        border-bottom: 0px;
-        border-top: 0px;
-        border-right: 2px;
-        border-style: solid;
-        border-color: black;
-        margin: 0px;
-        padding: 0px;
     }
     .table__responsibilities tr {
         display: table-row;
-        margin: 0px;
-        padding: 0px;
-    }
-    /*.table__specifier .table__responsibilities tbody td::before {
-            content: none;
-        }*/
-    .table__responsibilities tbody>tr>td:nth-child(1)::before,
-    .table__responsibilities tbody>tr>td:nth-child(2)::before,
-    .table__responsibilities tbody>tr>td:nth-child(3)::before,
-    .table__responsibilities tbody>tr>td:nth-child(4)::before,
-    .table__responsibilities tbody>tr>td:nth-child(5)::before,
-    .table__responsibilities tbody>tr>td:nth-child(6)::before,
-    .table__responsibilities tbody>tr>td:nth-child(7)::before,
-    .table__responsibilities tbody>tr>td:nth-child(8)::before {
-        content: none;
     }
     .table__responsibilities thead {
         display: table-header-group;
     }
-    .table__responsibilities>.table__hiddentd {}
+    /*clear before content*/
+    .table__responsibilities tbody td:nth-child(1)::before,
+    .table__responsibilities tbody td:nth-child(2)::before,
+    .table__responsibilities tbody td:nth-child(3)::before,
+    .table__responsibilities tbody td:nth-child(4)::before,
+    .table__responsibilities tbody td:nth-child(5)::before,
+    .table__responsibilities tbody td:nth-child(6)::before,
+    .table__responsibilities tbody td:nth-child(7)::before,
+    .table__responsibilities tbody td:nth-child(8)::before {
+        content: none;
+    }
+    /*Hide mobile only emelement*/
+    .table__responsibilities .table__mobilevisible{
+        display: none;
+    }
+    /*Styleing*/
+    .table__responsibilities td{
+        text-align: center;
+    }
+    .table__responsibilities td:nth-child(2){
+        text-align: left;
+    }
 }
 
 
 /*o Laptops:*/
 
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+    
+}
 
 
 /*o Desktops, low resolution:*/
@@ -150,33 +153,3 @@ First rule of Table Club
 /*o Desktops, high resolution:*/
 
 @media only screen and (min-width: 1600px) {}
-
-
-/*
-table {
-  border: 1px solid #000000;
-  border-collapse: collapse;
-  margin: 0 auto;
-  padding: 0px;
-  table-layout: fixed;
-  min-width: 100%;
-}
-table th {
-  text-align: center;
-  padding: 8px;
-  border: 1px solid #000000;
-  background: #1b90bb;
-  color: #ffffff;
-  font-weight: bold;
-  text-align: center;
-}
-table td {
-  padding: 8px;
-  border: 1px solid #000000;
-}
-table tr {
-  background-color: #dddddd;
-  color: #000000;
-  text-align: center;
-}
-*/
