@@ -10,6 +10,8 @@ Krav: "Webbplatsen ska se bra ut även i alla storlekar mellan ovan nämnda bryt
 --MOBILE FIRST!--
 */
 
+
+/*
 h2,
 h3 {
     text-transform: none;
@@ -23,7 +25,4 @@ h2 {
 h3 {
     margin-bottom: 1rem;
 }
-
-@media (min-width: 768px) {}
-
-@media (min-width: 992px) {}
+*/

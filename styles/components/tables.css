@@ -8,88 +8,106 @@ First rule of Table Club
 3.We do not talk about tables!
 */
 
-.table__responsibilities {
+
+/*
+*/
+
+.table__caption h3 {
+    text-transform: none;
+    text-align: center;
+    margin: 0px;
+    margin-bottom: 1rem;
+}
+
+.table__resp {
     border-collapse: collapse;
     margin: 0 auto;
     padding: 0px;
-    border:none;
+    border: none;
 }
 
-.table__responsibilities tr,
-.table__responsibilities td,
+.table__resp tr,
+.table__resp td,
 .table__mobilevisible {
     display: block;
 }
 
+
 /* Mobile Boarders*/
-.table__responsibilities tr {
-    border-left: 2px solid darkgrey;
-    border-right: 2px solid darkgrey;
+
+.table__resp tbody tr {
+    border-left: 2px solid var(--clr1DarkDesat);
+    border-right: 2px solid var(--clr1DarkDesat);
 }
 
-.table__responsibilities tr:first-child {
-    border-top: 2px solid darkgrey;
-    border-radius: 10px 10px 0 0 ;
+.table__resp tbody tr:first-child {
+    border-top: 2px solid var(--clr1DarkDesat);
+    border-radius: 10px 10px 0 0;
 }
-.table__responsibilities tr:last-child {
-    border-bottom: 2px solid darkgrey;
-    border-radius: 0 0 10px 10px ;
+
+.table__resp tbody tr:last-child {
+    border-bottom: 2px solid var(--clr1DarkDesat);
+    border-radius: 0 0 10px 10px;
 }
+
 
 /*Hide thead for mobile*/
-.table__responsibilities thead {
+
+.table__resp thead {
     display: none;
 }
 
-.table__responsibilities tbody tr:nth-child(odd) {
-    background-color: var(--clr1LightDesat);
+.table__resp tbody tr:nth-child(even) {
+    background-color: var(--clr1Light);
 }
+
+
 /*Mobile coloring*/
 
-.table__responsibilities tr td:nth-child(even){
-}
-.table__responsibilities tr td:nth-child(odd){
-}
+.table__resp td:nth-child(even) {}
+
+.table__resp td:nth-child(odd) {}
+
 
 /* Mobile TD things*/
 
-.table__responsibilities tbody td{
-    padding: .5rem;
+.table__resp td {
+    padding: var(--box1);
 }
 
-.table__responsibilities tbody td::before {
+.table__resp td::before {
     font-weight: bold;
 }
 
-.table__responsibilities tbody td:nth-child(1)::before {
+.table__resp td:nth-child(1)::before {
     content: "Kurskod: ";
 }
 
-.table__responsibilities tbody td:nth-child(2)::before {
+.table__resp td:nth-child(2)::before {
     content: "Kursnamn: ";
 }
 
-.table__responsibilities tbody td:nth-child(3)::before {
+.table__resp td:nth-child(3)::before {
     content: "Period: ";
 }
 
-.table__responsibilities tbody td:nth-child(4)::before {
+.table__resp td:nth-child(4)::before {
     content: "Roll: ";
 }
 
-.table__responsibilities tbody td:nth-child(5)::before {
+.table__resp td:nth-child(5)::before {
     content: "SY: ";
 }
 
-.table__responsibilities tbody td:nth-child(6)::before {
+.table__resp td:nth-child(6)::before {
     content: "IT: ";
 }
 
-.table__responsibilities tbody td:nth-child(7)::before {
+.table__resp td:nth-child(7)::before {
     content: "ID: ";
 }
 
-.table__responsibilities tbody td:nth-child(8)::before {
+.table__resp td:nth-child(8)::before {
     content: "GD: ";
 }
 
@@ -97,47 +115,63 @@ First rule of Table Club
 /* Tablets:*/
 
 @media only screen and (min-width: 480px) {
-
     /*Resetting display*/
-    .table__responsibilities td {
+    .table__resp td {
         display: table-cell;
     }
-    .table__responsibilities tr {
+    .table__resp tr {
         display: table-row;
     }
-    .table__responsibilities thead {
+    .table__resp thead {
         display: table-header-group;
     }
     /*clear before content*/
-    .table__responsibilities tbody td:nth-child(1)::before,
-    .table__responsibilities tbody td:nth-child(2)::before,
-    .table__responsibilities tbody td:nth-child(3)::before,
-    .table__responsibilities tbody td:nth-child(4)::before,
-    .table__responsibilities tbody td:nth-child(5)::before,
-    .table__responsibilities tbody td:nth-child(6)::before,
-    .table__responsibilities tbody td:nth-child(7)::before,
-    .table__responsibilities tbody td:nth-child(8)::before {
+    .table__resp td:nth-child(1)::before,
+    .table__resp td:nth-child(2)::before,
+    .table__resp td:nth-child(3)::before,
+    .table__resp td:nth-child(4)::before,
+    .table__resp td:nth-child(5)::before,
+    .table__resp td:nth-child(6)::before,
+    .table__resp td:nth-child(7)::before,
+    .table__resp td:nth-child(8)::before {
         content: none;
     }
     /*Hide mobile only emelement*/
-    .table__responsibilities .table__mobilevisible{
+    .table__resp .table__mobilevisible {
         display: none;
     }
     /*Styleing*/
-    .table__responsibilities td{
+    .table__resp td {
         text-align: center;
     }
-    .table__responsibilities td:nth-child(2){
+    .table__resp td:nth-child(2) {
         text-align: left;
     }
+    .table__resp tbody tr:nth-child(11) {
+        background-color: var(--clr1Light);
+    }
+    .table__head {
+        background: var(--clr1DarkDesat);
+        border: 2px solid var(--clr1DarkDesat);
+        color: var(--clr1VeryLightDesat);
+    }
+    .table__head th {
+        padding: var(--box1);
+    }
+    /*
+    .table__resp tbody td {
+        border-right: 2px solid var(--clr1DarkDesat);
+    }
+    .table__resp tbody td:nth-last-child() {
+        border-right: none;
+    }
+    */
 }
 
 
 /*o Laptops:*/
 
-@media only screen and (min-width: 768px) {
-    
-}
+@media only screen and (min-width: 768px) {}
 
 
 /*o Desktops, low resolution:*/

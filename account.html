@@ -58,19 +58,7 @@
     <main role="main" class="container-fluid profile">
         <!--JOBBA ENDAST INOM 'main'-->
         <div class="profile__images">
-            <!-- <img srcset="./img/webp/backgroundXS.webp 479w, 
-                    ./img/webp/backgroundS.webp 767w, 
-                    ./img/webp/backgroundM.webp 991w, 
-                    ./img/webp/backgroundXL.webp 1199w" sizes="(max-width: 479px) 439px, (max-width: 767px) 727px, (max-width: 991px) 951px, (max-width: 1199px) 
-                    1200px" src="./img/webp/background.jpg" alt="A starry sky"> -->
-            <picture class="profile__background">
-                <source media="(max-width: 479px)" srcset="/img/webp/backgroundXS.webp">
-                <source media="(max-width: 767px)" srcset="/img/webp/backgroundS.webp">
-                <source media="(max-width: 991px)" srcset="/img/webp/backgroundM2.webp">
-                <source media="(min-width: 992px)" srcset="/img/webp/backgroundXL.webp">
-                <img src="./img/webp/background.jpg" alt="A starry sky">
-            </picture>
-            <img class="profile__portrait" src="./img/webp/profile_S.webp" alt="Anna" width="150px" />
+            <img class="profile__portrait" src="./img/webp/profile_sm.webp" alt="Anna" srcset="./img/webp/profile_sm.webp 991w, ./img/webp/profile_lg.webp 992w" />
         </div>
         <section class="row col personal__info">
             <h2>Anna Andersson</h2>
@@ -81,7 +69,7 @@
                 </li>
                 <li>
                     <p>
-                        &#9993; <a href="mailto:anna.anderssonn@logistik.nu">anna.andersson@logistik.nu</a>
+                        &#9993; <a href="mailto:anna.andersson@logistik.nu">anna.andersson@logistik.nu</a>
                     </p>
                 </li>
                 <li>
@@ -126,12 +114,12 @@
             </section>
         </div>
         <hr class="divider">
-        <section class="row col table__specifier">
-            <table class="table__responsibilities">
-                <caption>
+        <section class="row col">
+            <table class="table__resp">
+                <caption class="table__caption">
                     <h3>Ansvarsområden</h3>
                 </caption>
-                <thead>
+                <thead class="table__head">
                     <tr>
                         <th>Kurskod</th>
                         <th>Kursnamn</th>
@@ -143,7 +131,7 @@
                         <th>GD</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody class="table__body">
                     <tr>
                         <td>GIK26C</td>
                         <td>Kollaborativ design</td>
