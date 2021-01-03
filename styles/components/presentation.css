@@ -1,5 +1,18 @@
-.presentation>p {
+.presentation__headline {
+    text-transform: none;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.presentation p {
     padding: 0 0.75em 0 0.75em;
+}
+
+@media (min-width: 480px){
+    .presentation p {
+        max-width: 50rem;
+        margin: auto;
+    }
 }
 
 @media (min-width: 768px) {
