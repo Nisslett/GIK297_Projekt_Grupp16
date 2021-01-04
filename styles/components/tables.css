@@ -133,24 +133,28 @@
   .table__resp .table__head th {
     padding: var(--box1);
   }
+  /*Fixes table on Chrome*/
+  .table__resp tbody tr:nth-child(10) td:nth-child(2) {
+    border-bottom: 2px solid var(--clr1DarkDesat);
+  }
 }
 
-/*o Laptops:*/
+/*Laptops:*/
 
 @media only screen and (min-width: 768px) {
 }
 
-/*o Desktops, low resolution:*/
+/*Desktops, low resolution:*/
 
 @media only screen and (min-width: 992px) {
 }
 
-/*o Desktops, medium resolution:*/
+/*Desktops, medium resolution:*/
 
 @media only screen and (min-width: 1200px) {
 }
 
-/*o Desktops, high resolution:*/
+/*Desktops, high resolution:*/
 
 @media only screen and (min-width: 1600px) {
 }
