@@ -16,7 +16,7 @@
 
 .profile__portrait {
   border-radius: 15px 50px;
-  height:150px;
+  width: 125px;
   border: 2px solid whitesmoke;
   margin: auto;
 }
@@ -34,8 +34,9 @@
   }
   .profile__portrait{
       position: absolute;
-      left:6%;
+      left:2%;
       bottom:-7rem;
+      width: 150px;
   }
 }
 
