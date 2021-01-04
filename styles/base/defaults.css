@@ -1,65 +1,52 @@
 html {
-    font-size: var(--remSize);
-    color: var(--black);
+  font-size: var(--remSize);
+  color: var(--black);
 }
-
 body {
-    font-size: var(--fontStd);
-    font-family: var(--fontSans);
-    background-color: var(--white);
+  font-size: var(--fontStd);
+  font-family: var(--fontSans);
+  background-color: var(--white);
 }
-
 main {
-    position: relative;
+  position: relative;
 }
-
 h2,
 h3 {
-    text-transform: uppercase;
-    letter-spacing: .1em;
+  text-transform: uppercase;
+  letter-spacing: .1em;
 }
-
 h2 {
-    font-size: 4rem;
-    text-align: center;
-    color: var(--clr1);
-    margin: var(--box6) 0 var(--box3);
+  font-size: 4rem;
+  text-align: center;
+  color: var(--clr1);
+  margin: var(--box6) 0 var(--box3);
 }
-
 h3 {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 }
-
 h4,
 th {
-    font-size: 1.8rem;
+  font-size: 1.8rem;
 }
-
 h5 {
-    font-size: 1.7rem;
+  font-size: 1.7rem;
 }
-
 h6 {
-    font-size: var(--fontStd);
+  font-size: var(--fontStd);
 }
-
 p {
-    font-size: var(--fontStd);
+  font-size: var(--fontStd);
 }
-
 li {
-    font-size: var(--fontStd);
+  font-size: var(--fontStd);
 }
-
 a {
-    color: var(--clr4Dark);
-    text-decoration: none;
+  color: var(--clr4Dark);
+  text-decoration: none;
 }
-
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
-
 a:visited {
-    color: var(--clr3Dark);
+  color: var(--clr3Dark);
 }

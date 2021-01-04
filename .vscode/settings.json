@@ -3,6 +3,9 @@
   "editor.hover.delay": 500,
   "editor.fontSize": 14,
   "editor.fontFamily": "Consolas, 'Courier New', monospace",
-  "editor.formatOnSave": false,
+  "[html, css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnSave": true,
   "html.autoClosingTags": false
 }
