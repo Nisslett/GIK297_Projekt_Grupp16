@@ -1,17 +1,21 @@
-.personal__headline {
-    text-transform: none;
-    text-align: center;
+/*.personal__headline {
+  text-transform: none;
+  text-align: center;
+} */
+
+.personal__name {
+  margin: 0px;
+  text-transform: none;
+  text-align: center;
 }
 
-.personal__headline h2 {
-        margin: 0px;
+.personal__title {
+  margin-bottom: 1rem;
+  text-transform: none;
+  text-align: center;
 }
 
-.personal__headline h3 {
-    margin-bottom: 1rem;
-}
-
-.personal__info ul {
+.personal ul {
   list-style-type: none;
   padding-left: 0px;
   margin: 5px 0px 0px 0px;

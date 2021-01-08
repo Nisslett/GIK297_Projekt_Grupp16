@@ -1,11 +1,11 @@
-.table__headline {
+.courses__headline {
   text-transform: none;
   text-align: center;
   margin: 0px;
   margin-bottom: 1rem;
 }
 
-.table__resp {
+.courses__table {
   border-collapse: collapse;
   margin: 0 auto;
   padding: 0px;
@@ -94,12 +94,15 @@
   .table__resp td {
     display: table-cell;
   }
+
   .table__resp tr {
     display: table-row;
   }
+
   .table__resp thead {
     display: table-header-group;
   }
+
   /*clear before content*/
   .table__resp td:nth-child(1)::before,
   .table__resp td:nth-child(2)::before,
@@ -111,28 +114,35 @@
   .table__resp td:nth-child(8)::before {
     content: none;
   }
+
   /*Hide mobile only emelement*/
   .table__resp .table__mobilevisible {
     display: none;
   }
+
   /*Styleing*/
   .table__resp td {
     text-align: center;
   }
+
   .table__resp td:nth-child(2) {
     text-align: left;
   }
+
   .table__resp tbody tr:nth-child(11) {
     background-color: var(--clr1Light);
   }
+
   .table__resp .table__head {
     background: var(--clr1DarkDesat);
     border: 2px solid var(--clr1DarkDesat);
     color: var(--clr1VeryLightDesat);
   }
+
   .table__resp .table__head th {
     padding: var(--box1);
   }
+
   /*Fixes table on Chrome*/
   .table__resp tbody tr:nth-child(10) td:nth-child(2) {
     border-bottom: 2px solid var(--clr1DarkDesat);

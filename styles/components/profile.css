@@ -1,8 +1,8 @@
-.profile {
-    max-width: 1280px;
+.main {
+  max-width: 1280px;
 }
 
-.profile__images {
+.image {
   background-image: url("../../img/webp/background_xs.webp");
   background-position: 50% 50%;
   width: 100%;
@@ -14,7 +14,7 @@
   display: flex;
 }
 
-.profile__portrait {
+.image__portrait {
   border-radius: 15px 50px;
   width: 125px;
   border: 2px solid whitesmoke;
@@ -22,39 +22,42 @@
 }
 
 @media (min-width: 480px) {
-  .profile__images {
+  .image {
     background-image: url("../../img/webp/background_sm.webp");
   }
 }
 
 @media (min-width: 768px) {
-  .profile__images {
+  .image {
     background-image: url("../../img/webp/background_md.webp");
     display: block;
   }
-  .profile__portrait{
-      position: absolute;
-      left:2%;
-      bottom:-7rem;
-      width: 150px;
+
+  .image__portrait {
+    position: absolute;
+    left: 2%;
+    bottom: -7rem;
+    width: 150px;
   }
 }
 
 @media (min-width: 992px) {
-  .profile__images {
+  .image {
     background-image: url("../../img/webp/background_lg.webp");
   }
-  .profile__portrait {
-    left:10%;
+
+  .image__portrait {
+    left: 10%;
   }
 }
 
 @media (min-width: 1200px) {
-  .profile__images {
+  .image {
     background-image: url("../../img/webp/background_xl.webp");
   }
-  .profile__portrait {
-    left:12%;
+
+  .image__portrait {
+    left: 12%;
   }
 }
 

@@ -1,12 +1,8 @@
 @media (min-width: 768px) {
-    .section__wrap {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        max-width: 1200px;
-        margin: auto;
-    }
-    .section__wrap hr {
-        display: none;
-    }
+  .section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: auto;
+  }
 }

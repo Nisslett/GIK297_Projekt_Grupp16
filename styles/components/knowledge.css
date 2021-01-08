@@ -1,51 +1,48 @@
-.knowledge__headline {
-  text-transform: none;
+.knowledge {
   text-align: center;
-  margin-bottom: 1rem;
 }
 
-.knowledge__prog,
-.knowledge__prog--secondary {
+.knowledge__headline {
+  margin-bottom: 1rem;
+  text-transform: none;
+}
+
+.knowledge__section {
   justify-content: center;
   align-items: center;
-  display: flex;
-  flex-direction: column;
   margin: 0.5em 0em 1em 0em;
+}
+
+.knowledge__subheader {
+  font-size: 1.8rem;
+  font-weight: 700;
 }
 
 /*Progress for Chrome and Mozilla*/
 
-.knowledge__prog progress {
+.knowledge__prog {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  width: 200px;
-  height: 10px;
+  width: 25rem;
+  height: 1.2rem;
   background-color: var(--clr1LightDesat);
 }
 
-.knowledge__prog--secondary progress {
-  background-color: var(--clr1LightDesat);
-}
-
-.knowledge__prog progress::-moz-progress-bar {
+.knowledge__prog::-moz-progress-bar {
   background-color: var(--clr1DarkDesat);
 }
 
-.knowledge__prog progress::-webkit-progress-bar {
+.knowledge__prog::-webkit-progress-bar {
   background-color: var(--clr1LightDesat);
 }
 
-.knowledge__prog progress::-webkit-progress-value {
+.knowledge__prog::-webkit-progress-value {
   background-color: var(--clr1DarkDesat);
 }
 
-.knowledge__prog label {
-  margin-top: 0.5em;
-}
-
-.knowledge__prog p {
-  font-weight: 700;
+.knowledge__label {
+  margin-top: 0.5rem;
 }
 
 @media (min-width: 768px) {
@@ -60,18 +57,16 @@
     width: 100%;
   }
 
-  .knowledge__prog {
+  .knowledge__section {
     width: 50%;
   }
 
-  .knowledge__prog progress {
-    width: 150px;
+  .knowledge__prog {
+    width: 20rem;
   }
-
 }
 
 @media (min-width: 1200px) {
-    .knowledge__prog progress {
-        width: 200px;
-      }
+  .knowledge__prog {
+  }
 }
