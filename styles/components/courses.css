@@ -19,16 +19,19 @@
 
 /* Mobile Boarders*/
 
-.courses__table-tr--radius-top {
+.courses__table-tr--border-top {
   border-radius: 10px 10px 0 0;
+  border-top: 2px solid var(--clr1DarkDesat);
 }
 
-.courses__table-tr--radius-bottom {
+.courses__table-tr--border-bottom {
   border-radius: 0 0 10px 10px;
+  border-bottom: 2px solid var(--clr1DarkDesat);
 }
 
-.courses_table-body {
-  border: 2px solid var(--clr1DarkDesat);
+.courses__table-tr {
+  border-left: 2px solid var(--clr1DarkDesat);
+  border-right: 2px solid var(--clr1DarkDesat);
 }
 
 /*Hide thead for mobile*/
@@ -128,19 +131,26 @@
     display: none;
   }
 
+  .courses__table-tr--tablet-hidden-borders {
+    border: none;
+  }
+
   /*Styleing*/
-  .courses__table-td--tablet {
+  .courses__tbody--tablet-border {
+    border: 2px solid var(--clr1DarkDesat);
+  }
+
+  .courses__table-td {
     text-align: center;
+  }
+
+  .courses__table-td--align-left {
+    text-align: left;
   }
 
   .courses__table-tr--bgcolor1-tablet {
     background-color: var(--clr1Light);
   }
-
-  /*Fixes table on Chrome*/
-  /* .table__resp tbody tr:nth-child(10) td:nth-child(2) {
-    border-bottom: 2px solid var(--clr1DarkDesat);
-  } */
 }
 
 /*Laptops:*/
