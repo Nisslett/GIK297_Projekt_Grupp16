@@ -12,141 +12,135 @@
   border: none;
 }
 
-.table__resp tr,
-.table__resp td,
-.table__mobilevisible {
+.courses__table-tr,
+.courses__table-td {
   display: block;
 }
 
 /* Mobile Boarders*/
 
-.table__resp tbody tr {
-  border-left: 2px solid var(--clr1DarkDesat);
-  border-right: 2px solid var(--clr1DarkDesat);
-}
-
-.table__resp tbody tr:first-child {
-  border-top: 2px solid var(--clr1DarkDesat);
+.courses__table-tr--radius-top {
   border-radius: 10px 10px 0 0;
 }
 
-.table__resp tbody tr:last-child {
-  border-bottom: 2px solid var(--clr1DarkDesat);
+.courses__table-tr--radius-bottom {
   border-radius: 0 0 10px 10px;
+}
+
+.courses_table-body {
+  border: 2px solid var(--clr1DarkDesat);
 }
 
 /*Hide thead for mobile*/
 
-.table__resp thead {
+.courses__thead {
+  background: var(--clr1DarkDesat);
+  border: 2px solid var(--clr1DarkDesat);
+  color: var(--clr1VeryLightDesat);
   display: none;
 }
 
-.table__resp tbody tr:nth-child(even) {
+.courses__table-tr--bgcolor1 {
   background-color: var(--clr1Light);
 }
 
 /* Mobile TD things*/
 
-.table__resp td {
+.courses__table-td,
+.courses__table-th {
   padding: var(--box1);
 }
 
-.table__resp td::before {
+.courses__table-td--mobile-text1::before,
+.courses__table-td--mobile-text2::before,
+.courses__table-td--mobile-text3::before,
+.courses__table-td--mobile-text4::before,
+.courses__table-td--mobile-text5::before,
+.courses__table-td--mobile-text6::before,
+.courses__table-td--mobile-text7::before,
+.courses__table-td--mobile-text8::before {
   font-weight: bold;
 }
 
-.table__resp td:nth-child(1)::before {
+.courses__table-td--mobile-text1::before {
   content: "Kurskod: ";
 }
 
-.table__resp td:nth-child(2)::before {
+.courses__table-td--mobile-text2::before {
   content: "Kursnamn: ";
 }
 
-.table__resp td:nth-child(3)::before {
+.courses__table-td--mobile-text3::before {
   content: "Period: ";
 }
 
-.table__resp td:nth-child(4)::before {
+.courses__table-td--mobile-text4::before {
   content: "Roll: ";
 }
 
-.table__resp td:nth-child(5)::before {
+.courses__table-td--mobile-text5::before {
   content: "SY: ";
 }
 
-.table__resp td:nth-child(6)::before {
+.courses__table-td--mobile-text6::before {
   content: "IT: ";
 }
 
-.table__resp td:nth-child(7)::before {
+.courses__table-td--mobile-text7::before {
   content: "ID: ";
 }
 
-.table__resp td:nth-child(8)::before {
+.courses__table-td--mobile-text8::before {
   content: "GD: ";
 }
 
 /* Tablets:*/
 
 @media only screen and (min-width: 480px) {
-  /*Resetting display*/
-  .table__resp td {
+  /*Restring display values*/
+  .courses__table-td {
     display: table-cell;
   }
 
-  .table__resp tr {
+  .courses__table-tr {
     display: table-row;
   }
 
-  .table__resp thead {
+  .courses__thead {
     display: table-header-group;
   }
 
   /*clear before content*/
-  .table__resp td:nth-child(1)::before,
-  .table__resp td:nth-child(2)::before,
-  .table__resp td:nth-child(3)::before,
-  .table__resp td:nth-child(4)::before,
-  .table__resp td:nth-child(5)::before,
-  .table__resp td:nth-child(6)::before,
-  .table__resp td:nth-child(7)::before,
-  .table__resp td:nth-child(8)::before {
+  .courses__table-td--mobile-text1::before,
+  .courses__table-td--mobile-text2::before,
+  .courses__table-td--mobile-text3::before,
+  .courses__table-td--mobile-text4::before,
+  .courses__table-td--mobile-text5::before,
+  .courses__table-td--mobile-text6::before,
+  .courses__table-td--mobile-text7::before,
+  .courses__table-td--mobile-text8::before {
     content: none;
   }
 
   /*Hide mobile only emelement*/
-  .table__resp .table__mobilevisible {
+
+  .courses__table-td--tablet-hidden {
     display: none;
   }
 
   /*Styleing*/
-  .table__resp td {
+  .courses__table-td--tablet {
     text-align: center;
   }
 
-  .table__resp td:nth-child(2) {
-    text-align: left;
-  }
-
-  .table__resp tbody tr:nth-child(11) {
+  .courses__table-tr--bgcolor1-tablet {
     background-color: var(--clr1Light);
   }
 
-  .table__resp .table__head {
-    background: var(--clr1DarkDesat);
-    border: 2px solid var(--clr1DarkDesat);
-    color: var(--clr1VeryLightDesat);
-  }
-
-  .table__resp .table__head th {
-    padding: var(--box1);
-  }
-
   /*Fixes table on Chrome*/
-  .table__resp tbody tr:nth-child(10) td:nth-child(2) {
+  /* .table__resp tbody tr:nth-child(10) td:nth-child(2) {
     border-bottom: 2px solid var(--clr1DarkDesat);
-  }
+  } */
 }
 
 /*Laptops:*/

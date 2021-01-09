@@ -8,7 +8,7 @@
   width: 100%;
   padding: var(--box2);
   border-radius: var(--box3);
-  box-shadow: .25rem .25rem .5rem var(--clr1LightDesat);
+  box-shadow: 0.25rem 0.25rem 0.5rem var(--clr1LightDesat);
   overflow: hidden;
   transition: all 150ms ease-in;
 }

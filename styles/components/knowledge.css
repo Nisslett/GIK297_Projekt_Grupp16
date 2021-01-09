@@ -65,8 +65,3 @@
     width: 20rem;
   }
 }
-
-@media (min-width: 1200px) {
-  .knowledge__prog {
-  }
-}

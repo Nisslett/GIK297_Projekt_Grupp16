@@ -6,7 +6,7 @@
 }
 
 @media (min-width: 768px) {
-  .divider--hide {
+  .divider--laptop-hide {
     display: none;
   }
 }

@@ -1,6 +1,12 @@
 .header {
   position: relative;
-  background: linear-gradient(45deg, var(--clr1), var(--clr1VeryLight) 35%, var(--clr1VeryLight) 65%, var(--clr1));
+  background: linear-gradient(
+    45deg,
+    var(--clr1),
+    var(--clr1VeryLight) 35%,
+    var(--clr1VeryLight) 65%,
+    var(--clr1)
+  );
 }
 .header__headline {
   font-size: 5rem;
