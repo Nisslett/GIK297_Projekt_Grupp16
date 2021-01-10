@@ -38,6 +38,9 @@
 }
 
 /*Hide thead for mobile*/
+.courses__tbody {
+  border: none;
+}
 
 .courses__thead {
   background: var(--clr1DarkDesat);
@@ -104,27 +107,20 @@
 
 @media only screen and (min-width: 480px) {
   /*Restring display values*/
-  .courses__table-td {
+  .courses__table-td--tablet {
     display: table-cell;
   }
 
-  .courses__table-tr {
+  .courses__table-tr--tablet {
     display: table-row;
   }
 
-  .courses__thead {
+  .courses__thead--tablet {
     display: table-header-group;
   }
 
   /*clear before content*/
-  .courses__table-td--mobile-text1::before,
-  .courses__table-td--mobile-text2::before,
-  .courses__table-td--mobile-text3::before,
-  .courses__table-td--mobile-text4::before,
-  .courses__table-td--mobile-text5::before,
-  .courses__table-td--mobile-text6::before,
-  .courses__table-td--mobile-text7::before,
-  .courses__table-td--mobile-text8::before {
+  .courses__table-td--tablet-text-hide::before {
     content: none;
   }
 
@@ -143,7 +139,7 @@
     border: 2px solid var(--clr1DarkDesat);
   }
 
-  .courses__table-td {
+  .courses__table-td--tablet {
     text-align: center;
   }
 
