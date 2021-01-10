@@ -1,8 +1,3 @@
-/*.personal__headline {
-  text-transform: none;
-  text-align: center;
-} */
-
 .personal__name {
   margin: 0px;
   text-transform: none;
@@ -15,7 +10,7 @@
   text-align: center;
 }
 
-.personal ul {
+.personal__info {
   list-style-type: none;
   padding-left: 0px;
   margin: 5px 0px 0px 0px;
