@@ -1,6 +1,7 @@
 .courses {
   max-width: 1280px;
 }
+
 .courses__headline {
   text-transform: none;
   text-align: center;
@@ -107,20 +108,27 @@
 
 @media only screen and (min-width: 480px) {
   /*Restring display values*/
-  .courses__table-td--tablet {
+  .courses__table-td {
     display: table-cell;
   }
 
-  .courses__table-tr--tablet {
+  .courses__table-tr {
     display: table-row;
   }
 
-  .courses__thead--tablet {
+  .courses__thead {
     display: table-header-group;
   }
 
   /*clear before content*/
-  .courses__table-td--tablet-text-hide::before {
+  .courses__table-td--mobile-text1::before,
+  .courses__table-td--mobile-text2::before,
+  .courses__table-td--mobile-text3::before,
+  .courses__table-td--mobile-text4::before,
+  .courses__table-td--mobile-text5::before,
+  .courses__table-td--mobile-text6::before,
+  .courses__table-td--mobile-text7::before,
+  .courses__table-td--mobile-text8::before {
     content: none;
   }
 
@@ -130,7 +138,9 @@
     display: none;
   }
 
-  .courses__table-tr--tablet-hidden-borders {
+  .courses__table-tr,
+  .courses__table-tr--border-bottom,
+  .courses__table-tr--border-top {
     border: none;
   }
 

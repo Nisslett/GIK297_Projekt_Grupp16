@@ -8,7 +8,8 @@
   border-radius: 5px;
   margin-bottom: 5px;
   display: flex;
-  max-width: 1280px;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .image__portrait {
@@ -17,12 +18,14 @@
   border: 2px solid whitesmoke;
   margin: auto;
 }
+
 /* Tablets:*/
 @media (min-width: 480px) {
   .image {
     background-image: url("../../img/webp/background_sm.webp");
   }
 }
+
 /* Laptops:*/
 @media (min-width: 768px) {
   .image {
@@ -37,6 +40,7 @@
     width: 150px;
   }
 }
+
 /* Desktop low resolution:*/
 @media (min-width: 992px) {
   .image {
@@ -47,6 +51,7 @@
     left: 10%;
   }
 }
+
 /* Desktop medium resolution:*/
 @media (min-width: 1200px) {
   .image {
@@ -57,6 +62,7 @@
     left: 12%;
   }
 }
+
 /* Desktop high resolution:*/
 @media (min-width: 1600px) {
 }

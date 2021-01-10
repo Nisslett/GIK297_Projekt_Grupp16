@@ -1,5 +1,6 @@
 .personal {
-  max-width: 1280px;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .personal__name {
