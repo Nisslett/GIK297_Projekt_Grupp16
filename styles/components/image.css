@@ -17,13 +17,13 @@
   border: 2px solid whitesmoke;
   margin: auto;
 }
-
+/* Tablets:*/
 @media (min-width: 480px) {
   .image {
     background-image: url("../../img/webp/background_sm.webp");
   }
 }
-
+/* Laptops:*/
 @media (min-width: 768px) {
   .image {
     background-image: url("../../img/webp/background_md.webp");
@@ -37,7 +37,7 @@
     width: 150px;
   }
 }
-
+/* Desktop low resolution:*/
 @media (min-width: 992px) {
   .image {
     background-image: url("../../img/webp/background_lg.webp");
@@ -47,7 +47,7 @@
     left: 10%;
   }
 }
-
+/* Desktop medium resolution:*/
 @media (min-width: 1200px) {
   .image {
     background-image: url("../../img/webp/background_xl.webp");
@@ -57,6 +57,6 @@
     left: 12%;
   }
 }
-
+/* Desktop high resolution:*/
 @media (min-width: 1600px) {
 }

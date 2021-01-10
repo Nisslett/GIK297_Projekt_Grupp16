@@ -6,6 +6,7 @@
   max-width: 1280px;
 }
 
+/*Laptops:*/
 @media (min-width: 768px) {
   .divider--laptop-hide {
     display: none;

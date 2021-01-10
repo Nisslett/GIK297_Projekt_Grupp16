@@ -44,7 +44,7 @@
 .knowledge__label {
   margin-top: 0.5rem;
 }
-
+/* Laptops:*/
 @media (min-width: 768px) {
   .knowledge {
     flex-wrap: wrap;
