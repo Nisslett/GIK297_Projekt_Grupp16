@@ -1,3 +1,6 @@
+.courses {
+  max-width: 1280px;
+}
 .courses__headline {
   text-transform: none;
   text-align: center;
